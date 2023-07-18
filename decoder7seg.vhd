@@ -23,12 +23,12 @@ seven_seg_out <= "1000000" when bcd_in = "0000" else -- 0
 "0000000" when bcd_in = "1000" else -- 8
 "0011000" when bcd_in = "1001" else -- 9
 
-"0000010" when bcd_in = "0001" else -- a
-"1100000" when bcd_in = "0010" else -- b
-"0110001" when bcd_in = "0011" else -- c
-"1000010" when bcd_in = "0101" else -- d
-"0110000" when bcd_in = "0101" else -- e
-"0111000" when bcd_in = "0110" else -- f
+"0000010" when bcd_in = "1010" else -- a
+"1100000" when bcd_in = "1011" else -- b
+"0110001" when bcd_in = "1100" else -- c
+"1000010" when bcd_in = "1101" else -- d
+"0110000" when bcd_in = "1101" else -- e
+"0111000" when bcd_in = "1111" else -- f
 
 "0111111"; -- null
 end dataflow;
